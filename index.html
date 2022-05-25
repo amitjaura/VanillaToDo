@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do app in Vanilla</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 <body class="container">
+    <header class="logo">
+    <a href="amitjaura.com" target="_blank">
+        <img src="img/cropped-to-do-list-100px.png" class="logo"/>
+    </a>
+    </header>
+    
+    <div class="main">
+        <form>
+            <input type="text" placeholder="to do item...">
+            <button type="submit"><i class="fas fa-plus-square"></i></button>
+        </form>
+        <div class="todolist">
+            <ul></ul>
+            <a class="clearall" id="clearall">Clear All</a>
+        </div>
+    </div>
+    
     <script type="text/javascript" src="app.js "></script>
-    <h1>Hello Vanilla</h1>
 </body>
 </html>
