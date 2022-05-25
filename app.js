@@ -1,4 +1,5 @@
 document.querySelector('form').addEventListener('submit', formSubmit);
+document.querySelector('ul').addEventListener('click', ulClick);
 
 
 function formSubmit(e){
@@ -24,4 +25,28 @@ function addToList(item){
     ul.appendChild(li);
     document.querySelector('input').value = ''
 
+}
+
+function ulClick(e){
+    if(e.target.name=='checkbutton'){
+        let item = e.target.parentNode;
+        if(item.style.textDecoration =='line-through')
+        {
+            item.style.textDecoration =='none';
+        }
+        else{
+            item.style.textDecoration = 'line-through';
+        }
+    }
+
+    if(e.target.name=='deletebutton'){
+        let item = e.target.parentNode;
+
+        item.addEventListener('transitionend', function() {
+            item.remove();
+        });
+
+
+        item.classList.add('todo-list-item-fall');
+    }
 }
