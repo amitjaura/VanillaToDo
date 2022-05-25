@@ -1,2 +1,2 @@
-# VanillaToDo
-to do app in Vanilla
+# Introduction
+To do app in Vanilla
